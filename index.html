@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moundore — Votre transformation, notre expertise.</title>
+<link rel="icon" type="image/png" href="moundore_icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #1F3864;
+  --gold: #C9963B;
+  --gold-light: #FDF6E3;
+  --white: #FFFFFF;
+  --off-white: #F8F9FA;
+  --grey: #6B7280;
+  --grey-light: #E5E7EB;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', 'Segoe UI', system-ui, sans-serif;
+  color: var(--navy);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ── Subtle background pattern ── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(31,56,100,0.03) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 50% at 80% 100%, rgba(201,150,59,0.03) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Animations ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes goldShimmer {
+  0%, 100% { opacity: 0.7; }
+  50%      { opacity: 1; }
+}
+@keyframes lineGrow {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+.fade-up {
+  opacity: 0;
+  animation: fadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+/* ── Hero ── */
+.hero {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px;
+  text-align: center;
+}
+
+.hero-logo {
+  width: min(380px, 70vw);
+  margin-bottom: 48px;
+  animation-delay: 0.15s;
+}
+
+.hero-tagline {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+  font-weight: 500;
+  font-style: italic;
+  color: var(--navy);
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+  margin-bottom: 28px;
+  animation-delay: 0.4s;
+}
+
+.hero-line {
+  width: 56px;
+  height: 2px;
+  background: var(--gold);
+  margin: 0 auto 28px;
+  transform-origin: center;
+  animation: lineGrow 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.6s forwards;
+  transform: scaleX(0);
+}
+
+.hero-pillars {
+  font-size: clamp(0.85rem, 1.5vw, 1.05rem);
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  animation-delay: 0.7s;
+  animation: goldShimmer 3s ease-in-out infinite, fadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.7s forwards;
+  opacity: 0;
+}
+
+.hero-pillars span {
+  color: var(--grey-light);
+  margin: 0 6px;
+  font-weight: 300;
+}
+
+/* ── Section commune ── */
+section {
+  position: relative;
+  z-index: 1;
+  padding: 80px 24px;
+}
+
+.section-inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* ── Description ── */
+.description {
+  background: var(--off-white);
+}
+
+.description-text {
+  font-size: clamp(1.05rem, 1.8vw, 1.2rem);
+  line-height: 1.85;
+  color: var(--navy);
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 0.005em;
+}
+
+.description-text strong {
+  font-weight: 500;
+  color: var(--gold);
+}
+
+/* ── Contact ── */
+.contact {
+  background: var(--white);
+}
+
+.contact-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--navy);
+}
+
+.contact-heading::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: var(--gold);
+  margin: 16px auto 0;
+}
+
+.contact-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 1rem;
+  color: var(--navy);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 400;
+}
+
+.contact-item:hover {
+  color: var(--gold);
+}
+
+.contact-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--off-white);
+  border: 1px solid var(--grey-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover .contact-icon {
+  background: var(--gold-light);
+  border-color: var(--gold);
+}
+
+.contact-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: var(--navy);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ── Footer ── */
+footer {
+  position: relative;
+  z-index: 1;
+  padding: 32px 24px;
+  text-align: center;
+  border-top: 1px solid var(--grey-light);
+  background: var(--white);
+}
+
+footer p {
+  font-size: 0.82rem;
+  color: var(--grey);
+  letter-spacing: 0.04em;
+}
+
+/* ── Scroll reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .hero { padding: 48px 20px; min-height: 90vh; }
+  .hero-logo { width: 260px; margin-bottom: 36px; }
+  .hero-pillars { letter-spacing: 0.12em; font-size: 0.78rem; }
+  section { padding: 56px 20px; }
+  .contact-items { align-items: flex-start; padding-left: 10%; }
+}
+</style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero">
+  <img src="moundore_logo.png" alt="Moundore" class="hero-logo fade-up" />
+  <p class="hero-tagline fade-up">Votre transformation, notre expertise.</p>
+  <div class="hero-line"></div>
+  <p class="hero-pillars">Conseil <span>·</span> Solutions <span>·</span> Formation <span>·</span> Transformation</p>
+</section>
+
+<!-- Description -->
+<section class="description">
+  <div class="section-inner reveal">
+    <p class="description-text">
+      <strong>Moundore</strong> accompagne les institutions financières dans leur transformation&nbsp;: conseil stratégique, plateforme FADIMS, formation professionnelle et digitalisation des processus.
+    </p>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact">
+  <div class="section-inner reveal">
+    <h2 class="contact-heading">Contact</h2>
+    <div class="contact-items">
+
+      <a href="mailto:idrissa.niakh@moundore.com" class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        idrissa.niakh@moundore.com
+      </a>
+
+      <a href="tel:+33761464338" class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </div>
+        +33 7 61 46 43 38 · +221 78 731 17 51
+      </a>
+
+      <a href="https://linkedin.com/in/idrissa-niakh-phd" target="_blank" class="contact-item">
+        <div class="contact-icon">
+          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </div>
+        linkedin.com/in/idrissa-niakh-phd
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2026 Moundore. Tous droits réservés.</p>
+</footer>
+
+<script>
+// Scroll reveal
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }});
+}, { threshold: 0.15 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
