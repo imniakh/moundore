@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact · Moundore</title>
+  <meta name="description" content="Contactez Moundore pour une démonstration, une formation ou un conseil. Dr. Idrissa Niakh, Dakar, Sénégal.">
+  <link rel="icon" type="image/png" href="assets/moundore_icon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav nav--solid"><div class="nav__inner"><a href="index.html" class="nav__logo"><div class="nav__m">M</div><span class="nav__name">Moundore</span></a><div class="nav__links"><a href="index.html" class="nav__link">Accueil</a><a href="solutions.html" class="nav__link">Solutions</a><a href="formation.html" class="nav__link">Formation</a><a href="conseil.html" class="nav__link">Conseil</a><a href="transformation.html" class="nav__link">Transformation</a><a href="apropos.html" class="nav__link">À propos</a><a href="contact.html" class="nav__link nav__link--active">Contact</a></div><button class="nav__hamburger" aria-label="Menu">☰</button></div><div class="nav__mobile" style="display:none"><a href="index.html" class="nav__mobile-link">Accueil</a><a href="solutions.html" class="nav__mobile-link">Solutions</a><a href="formation.html" class="nav__mobile-link">Formation</a><a href="conseil.html" class="nav__mobile-link">Conseil</a><a href="transformation.html" class="nav__mobile-link">Transformation</a><a href="apropos.html" class="nav__mobile-link">À propos</a><a href="contact.html" class="nav__mobile-link nav__mobile-link--active">Contact</a></div></nav>
+
+<section class="page-hero">
+  <div class="reveal"><h1 class="page-hero__title">Contactez-nous</h1></div>
+  <div class="reveal reveal--d1"><div class="gold-line"></div></div>
+  <div class="reveal reveal--d2"><p class="page-hero__text" style="max-width:460px">Démonstration, formation, conseil ou simple question : nous vous répondrons dans les meilleurs délais.</p></div>
+</section>
+
+<section class="section section--white">
+  <div class="container--md" style="max-width:900px">
+    <div class="grid grid--contact">
+
+      <!-- FORM -->
+      <div class="reveal">
+        <div class="form__success">
+          <svg style="width:40px;height:40px;color:var(--gold);margin:0 auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          <h3>Message envoyé</h3>
+          <p>Nous vous répondrons dans les meilleurs délais.</p>
+        </div>
+        <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <h3 style="font-family:var(--font-display);font-size:19px;color:var(--navy);margin-bottom:24px;font-weight:600">Envoyez-nous un message</h3>
+          <div class="form__group">
+            <label class="form__label">Nom complet</label>
+            <input type="text" name="name" class="form__input" required>
+          </div>
+          <div class="form__group">
+            <label class="form__label">Email professionnel</label>
+            <input type="email" name="email" class="form__input" required>
+          </div>
+          <div class="form__group">
+            <label class="form__label">Objet</label>
+            <input type="text" name="subject" class="form__input">
+          </div>
+          <div class="form__group">
+            <label class="form__label">Message</label>
+            <textarea name="message" class="form__textarea" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--gold btn--full">Envoyer</button>
+        </form>
+      </div>
+
+      <!-- INFO -->
+      <div class="reveal reveal--d1">
+        <h3 style="font-family:var(--font-display);font-size:19px;color:var(--navy);margin-bottom:24px;font-weight:600">Dr. Idrissa Niakh</h3>
+
+        <div class="contact-item">
+          <div class="contact-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <span class="contact-item__label">idrissa.niakh@moundore.com</span>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+          <span class="contact-item__label">+33 7 61 46 43 38 (France)</span>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+          <span class="contact-item__label">+221 78 731 17 51 (Sénégal)</span>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
+          <span class="contact-item__label">linkedin.com/in/idrissa-niakh-phd</span>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <span class="contact-item__label">Dakar, Sénégal</span>
+        </div>
+
+        <div class="contact-demo">
+          <h4>Demander une démonstration</h4>
+          <p>Nous vous présentons FADIMS Platform sur vos cas d'usage, avec vos instruments et vos réglementations.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="footer__grid"><div><div class="footer__brand">Moundore</div><p class="footer__desc">Innovation dans la Finance,<br>la Banque et l'Assurance.</p><div class="footer__tagline">Votre transformation, notre expertise.</div><div class="footer__logo"><img src="assets/moundore_logo.png" alt="Moundore"></div></div><div><div class="footer__heading">Navigation</div><a href="index.html" class="footer__link">Accueil</a><a href="solutions.html" class="footer__link">Solutions</a><a href="formation.html" class="footer__link">Formation</a><a href="conseil.html" class="footer__link">Conseil</a><a href="transformation.html" class="footer__link">Transformation</a><a href="apropos.html" class="footer__link">À propos</a><a href="contact.html" class="footer__link">Contact</a></div><div><div class="footer__heading">Contact</div><p class="footer__contact">idrissa.niakh@moundore.com<br>+33 7 61 46 43 38<br>+221 78 731 17 51<br>Dakar, Sénégal</p></div></div><div class="footer__bottom"><span>© 2026 Moundore. Tous droits réservés.</span><span>Dakar · Paris · Abidjan</span></div></footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
