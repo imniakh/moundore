@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72" width="72" height="72">
+  <!-- Moundore Icon — M + single module cube -->
+
+  <g transform="translate(3, 4)">
+    <rect x="0" y="0" width="7" height="56" rx="1" fill="#1F3864"/>
+    <rect x="0" y="0" width="26" height="7" rx="1" fill="#1F3864"/>
+    <polygon points="26,0 40,28 26,7" fill="#1F3864" opacity="0.85"/>
+    <polygon points="40,28 54,0 54,7 40,35" fill="#1F3864" opacity="0.85"/>
+    <rect x="54" y="0" width="7" height="56" rx="1" fill="#1F3864"/>
+    <rect x="35" y="0" width="26" height="7" rx="1" fill="#1F3864"/>
+    <rect x="25" y="38" width="12" height="12" rx="2.5" fill="#C9963B" opacity="0.5"/>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 80" width="340" height="80">
+  <!-- Moundore Logo — Concept 2: Geometric M + single module cube + wordmark -->
+
+  <g transform="translate(6, 8)">
+    <rect x="0" y="0" width="7" height="56" rx="1" fill="#FFFFFF"/>
+    <rect x="0" y="0" width="26" height="7" rx="1" fill="#FFFFFF"/>
+    <polygon points="26,0 40,28 26,7" fill="#FFFFFF" opacity="0.85"/>
+    <polygon points="40,28 54,0 54,7 40,35" fill="#FFFFFF" opacity="0.85"/>
+    <rect x="54" y="0" width="7" height="56" rx="1" fill="#FFFFFF"/>
+    <rect x="35" y="0" width="26" height="7" rx="1" fill="#FFFFFF"/>
+    <rect x="25" y="38" width="12" height="12" rx="2.5" fill="#C9963B" opacity="0.5"/>
+  </g>
+
+  <text x="86" y="48" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="500" fill="#FFFFFF" letter-spacing="4">MOUNDORE</text>
+</svg>
